@@ -1,12 +1,37 @@
 {
-  "pages":[
-    "pages/index/index",
+  "pages": [
+    "pages/poemDetail/detail",
+    "pages/poem-list/poemList",
+    "pages/poem/poem",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+  "window": {
+    "navigationBarTitleText": "小程序测试号"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/poem/poem",
+        "text": "POEM"
+      },
+      {
+        "pagePath": "pages/poem-list/poemList",
+        "text": "LIST"
+      },
+      {
+        "pagePath": "pages/poemDetail/detail",
+        "text": "Detail"
+      }
+    ],
+    "selectedColor":"red",
+    "backgroundColor":"aquamarine"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle":"black"
 }

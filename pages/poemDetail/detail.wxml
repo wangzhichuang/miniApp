@@ -1,0 +1,4 @@
+<view class="detailBox" hover-class="none" hover-stop-propagation="false">
+    detail
+</view>
+  

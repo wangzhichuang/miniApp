@@ -1,0 +1,17 @@
+<view class="listContainer" hover-class="none" hover-stop-propagation="false">
+
+    <view bind:tap="jumpToDetail" wx:for="{{tabelData}}" class="aBox" hover-class="none" hover-stop-propagation="false">
+        <!-- avatar -->
+        <view class="avatar" hover-class="none" hover-stop-propagation="false">
+            <image class="" src="{{item.avatar}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">  
+            </image>
+        </view>
+        <!-- content -->
+        <view class="content" hover-class="none" hover-stop-propagation="false">
+                {{item.content}}
+        </view>
+          
+    </view>
+      
+</view>
+  

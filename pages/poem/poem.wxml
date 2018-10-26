@@ -1,0 +1,27 @@
+<!-- pages/poem/index.wxml -->
+<view class="swiperBox" hover-class="none" hover-stop-propagation="false">
+     <!-- // swiper组建 -->
+    <swiper indicator-color="black" circular="true" indicator-active-color="red" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+
+</view>
+
+<view class="section">
+  <textarea class="textareabox" bindblur="bindTextAreaBlur" placeholder="请输入你的三行诗" />
+  <button size="default" type="primary">提交</button>
+</view>
+
+
+
+
+
+
+
+
+<!-- <text class="wz1" selectable="false" space="false" decode="false">{{testwz1}}</text>
+<button bind:tap="speak">提交按钮</button> -->
